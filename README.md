@@ -1,2 +1,2 @@
 # alx-low_level_programming
-Working with C.
+Working with C and Betty Coding Style
