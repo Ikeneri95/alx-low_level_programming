@@ -1,23 +1,22 @@
 #include <stdio.h>
 /**
- * main - print if the number is positive, zero, or negative
- *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative"
- * Return: 0
- */
+* main - put am for betty body wotowoto
+* Return: Always 0 (success)
+*/
 int main(void)
 {
-	char ch;
+	char henry = 'a';
 
-	for (ch = 'a' ; ch <= 'z' ; ch++)
-	{
-		putchar(ch);
-	}
-	for (ch = 'A' ; ch <= 'z' ; ch++)
-	{
-		putchar(ch);
-	}
-	putchar ('\n');
-	return (0);
+	char hamza = 'A';
+for (henry = 'a' ; henry <= 'z'; henry++)
+{
+	putchar(henry);
+}
+	for (hamza = 'A' ; hamza <= 'Z'; hamza++)
+{
+	putchar(hamza);
+}
+	putchar('\n');
+
+return (0);
 }
