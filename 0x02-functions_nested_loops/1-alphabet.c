@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_alphabet:This program prints alphabet in lowercare 
  */
