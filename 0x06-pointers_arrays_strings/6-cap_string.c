@@ -5,7 +5,7 @@
 * Return: 0
 */
 
-char *cap_string(char str[], int n)
+char *cap_string(char str[])
 {
 	int i;
 	int j = 0;
