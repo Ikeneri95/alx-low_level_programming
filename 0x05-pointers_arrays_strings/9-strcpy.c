@@ -6,7 +6,7 @@
  * @dest: Destination
  * @src: Source
  */
- 
+int main (void)
 {
 	int i;
 
