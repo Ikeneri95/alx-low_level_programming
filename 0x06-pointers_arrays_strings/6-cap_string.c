@@ -1,32 +1,35 @@
 #include "main.h"
+
 /**
- * *cap_string - capitalizes the first letter of all words of a string
-* @str: String to be capitalized
-* Return: 0
-*/
+ * cap_string - capitalizes everey word of a string
+ * @s: string to modify
+ *
+ * Return: the resulting string
+ */
 
-char *cap_string(char str[])
+char *cap_string(char *s)
 {
-	int i;
-	int j = 0;
-	char sep[] = {'\t', '\n', ';', '!', '?', '"', '(', ')', '{', '}'};
+	int i, j;
 
-	for (i = 0; i < n; i++)
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((i == 0 && str[i] != ' ') || (str[i] != ' ' && str[i - 1] == ' '))
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+		for (j = 0; j < 13; j++)
 		{
-			if (str[i] != ' ' && str[i] == sep[j])
+			if (s[i] == spe[j])
 			{
-			if (str[i] >= 'a' && str[i] <= 'z')
-			{
-				str[i] = (char)(('A' - 'a') + str[i]);
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
 			}
-			}
+		}
 	}
-	else if (str[i] >= 'A' && str[i] <= 'Z')
-	{
-		str[i] = (char)(str[i] + ('a' - 'A'));
-	}
-	}
-	return (0);
+
+	return (s);
 }
