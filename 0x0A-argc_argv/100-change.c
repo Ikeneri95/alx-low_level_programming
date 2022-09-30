@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
-
+	
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
 		{
 			cents -= 10;
 			continue;
-
+		}
+		if ((cents - 5) >= 0)
 		{
 			cents -= 5;
 			continue;
